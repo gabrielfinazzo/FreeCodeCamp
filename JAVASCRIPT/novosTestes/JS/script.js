@@ -63,8 +63,17 @@ welcomeEl.innerText = greeting + name + "!"; */
 // When the user clicks the purchase button, render out
 // "Something went wrong, please try again" in the paragraph
 // that has the id="error"
-let errorMessage = document.getElementById("error");
+//let errorMessage = document.getElementById("error");
 
-function purchase() {
-    errorMessage.textContent = "Something went wrong, please try again";
-};
+//function purchase() {
+//    errorMessage.textContent = "Something went wrong, please try again.";
+//};
+
+// Ex 06:
+// Create four functions: add(), subtract(), divide(), multiply()
+// Call the correct function when the user clicks on one of the buttons
+// Perform the given calculation using num1 and num2
+// Render the result of the calculation in the paragraph with id="sum-el"
+
+// E.g. if the user clicks on the "Plus" button, you should render
+// "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
