@@ -34,16 +34,20 @@ function renderGame() {
         isAlive = false;
     };
     
-    
     messageEl.textContent = message;
 };
 
 function newCard() {
     console.log("Drawing a new card from the deck!");
-    let nextCard = 8; //parseInt(Math.random() * 10 + 2);
-    sum += nextCard
+    let card = 8; //parseInt(Math.random() * 10 + 2);
+    sum += card
+    // Push the card to the cards array
+    cards.push(card);
+    console.log(cards);
     renderGame();
 };
+
+
 
 
 
