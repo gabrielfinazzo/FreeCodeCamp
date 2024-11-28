@@ -3,8 +3,8 @@
 
 // 2. Create a variable, sum, and set it to the sum of the two cards
 
-let firstCard = 10//parseInt(Math.random() * 10 + 2);
-let secondCard = 4//parseInt(Math.random() * 10 + 2);
+let firstCard = getRandomCard();//parseInt(Math.random() * 10 + 2);
+let secondCard = getRandomCard();//parseInt(Math.random() * 10 + 2);
 let cards = [firstCard, secondCard];
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
@@ -16,14 +16,24 @@ let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 //let sumEl = document.querySelector(".sum-el");
 
+// Create a function, getRandomCard(), that always returns the number 5
+function getRandomCard() {
+    return 5
+};
+
+
 // Create a new function called startGame() that calls renderGame()
 function startGame() {
     renderGame();
 };
 
 function renderGame() {
+    cardsEl.textContent = "Cards: "
     sumEl.textContent = "Sum: " + sum;
-    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " ";
+    };
+
     if (sum <= 20) {
         message = "Do you want to draw a new card? ";
     } else if (sum === 21) {
@@ -38,12 +48,10 @@ function renderGame() {
 };
 
 function newCard() {
-    console.log("Drawing a new card from the deck!");
-    let card = 8; //parseInt(Math.random() * 10 + 2);
+    let card = getRandomCard();
     sum += card
-    // Push the card to the cards array
     cards.push(card);
-    console.log(cards);
+    console.log(cards)
     renderGame();
 };
 

@@ -81,6 +81,93 @@ console.log(messages);
     console.log(count);
 }; */
 
-for (let count = 10; count > 0; count -= 1) {
+/* for (let count = 10; count > 0; count -= 1) {
     console.log(count);
+}; */
+
+
+//Ex: 06
+// Create a for loop that counts from 10 to 100 in steps of 10
+/* for (let i = 10; i < 101; i += 10) {
+    console.log(i);
+}; */
+
+
+//Ex: 07
+/* let messages = [
+    "Hey, how's it going?",
+    "I'm great, thank you! How about you?",
+    "All good. Been working on my portfolio lately.",
+    "Same here!",
+    "New message"
+];
+
+let quantidade = messages.length
+parseInt(quantidade);  */
+
+//for (i = 0; i < /* quantidade */messages.length; i += 1) {
+//    console.log(messages[i])
+//};
+
+//EX: 08
+
+// Create a for loop that logs out all the cards in the array
+// Use cards.length to specify how long the loop should run
+
+/* let cards = [7, 3, 9];
+
+for (let i = 0; i < cards.length; i++ ) {
+    console.log(cards[i]);
+}; */
+
+
+//EX 09:
+
+/* let sentence = ["Hello", "my", "name", "is", "Gabriel"];
+let greetingEl = document.getElementById("greeting-el");
+
+for (let i = 0; i < sentence.length; i++) {
+    greetingEl.textContent += sentence[i] + " ";
 };
+ */
+// Render the sentence in the greetingEl paragraph using a for loop and .textContent
+
+//EX: 10:
+
+/* let player1Time = 102;
+let player2Time = 107;
+
+function getFastestRaceTime() {
+    if (player1Time < player2Time) {
+        return player1Time;
+    } else if (player2Time < player1Time) {
+        return player2Time;
+    } else {
+        return player1Time;
+    };
+};
+
+let fastestRace = getFastestRaceTime();
+console.log(fastestRace); */
+
+//EX: 11
+
+// write a function that returns the total race time
+// Call/invoke the function and store the returned value in a new variable
+// Finally, log the variable out
+
+/* let player1Time = 145;
+let player2Time = 107;
+
+function getTotalRaceTime() {
+    return player1Time + player2Time
+}
+
+let totalTime = getTotalRaceTime()
+
+console.log(totalTime);
+ */
+
+let randomNumber = Math.random();
+
+console.log(randomNumber)
