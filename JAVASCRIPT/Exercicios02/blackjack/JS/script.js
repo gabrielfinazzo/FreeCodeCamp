@@ -3,27 +3,47 @@
 
 // 2. Create a variable, sum, and set it to the sum of the two cards
 
-let firstCard = getRandomCard();//parseInt(Math.random() * 10 + 2);
-let secondCard = getRandomCard();//parseInt(Math.random() * 10 + 2);
-let cards = [firstCard, secondCard];
-let sum = firstCard + secondCard;
-let hasBlackJack = false;
-let isAlive = true;
-let message;
 
+let cards = [];
+let hasBlackJack = false;
+let isAlive = false;
+let message;
+let sum = 0;
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 //let sumEl = document.querySelector(".sum-el");
 
+//Nome/Dinheiro -> Pontuação
+
+let player = {
+    name: "Per",
+    chips: 145
+};
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name + ": $" + player.chips;
+
 // Create a function, getRandomCard(), that always returns the number 5
 function getRandomCard() {
-    return 5
+    let randomNumber = Math.floor(Math.random() * 13) + 1;
+    if (randomNumber > 10) {
+        return 10;
+    } else if (randomNumber === 1) {
+        return 11;
+    } else {
+        return randomNumber
+    };
 };
 
 
 // Create a new function called startGame() that calls renderGame()
 function startGame() {
+    isAlive = true
+    let firstCard = getRandomCard();
+    let secondCard = getRandomCard();
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard;
     renderGame();
 };
 
@@ -48,18 +68,11 @@ function renderGame() {
 };
 
 function newCard() {
-    let card = getRandomCard();
-    sum += card
-    cards.push(card);
-    console.log(cards)
-    renderGame();
+    if (isAlive === true && hasBlackJack === false) {
+        let card = getRandomCard();
+        sum += card
+        cards.push(card);
+        renderGame();
+    };
 };
 
-
-
-
-
-
-// CASH OUT!
-//console.log(hasBlackJack);
-//console.log(isAlive)

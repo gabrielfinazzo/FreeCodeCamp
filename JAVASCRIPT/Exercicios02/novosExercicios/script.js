@@ -168,6 +168,43 @@ let totalTime = getTotalRaceTime()
 console.log(totalTime);
  */
 
-let randomNumber = Math.random();
+/* let randomNumber = Math.random() * 6 + 1;
+let floorNumber = Math.floor(randomNumber)
+console.log(floorNumber); */
 
-console.log(randomNumber)
+// 0, 1, 2, 3, 4, 5
+
+//EX: 12
+
+// Create a function, rollDice(), that returns a random number between 1 and 6
+
+/* function rollDice() {
+    let numbers = Math.floor(Math.random() * 6) + 1;
+    return numbers
+};
+
+console.log(rollDice()); */
+
+//EX: 13
+
+/* let hasSolvedChallenge = false;
+let hasHintsLeft = false;
+
+function showSolution() {
+    if (hasSolvedChallenge === false || hasHintsLeft === false) {
+        console.log("Showing the solution...");
+    };
+};
+
+showSolution() */
+
+let likesDocumentaries = true;
+let likesStartups = true;
+
+function recommendMovie() {
+    if (likesDocumentaries === true || likesStartups === true) {
+        console.log("Hey, check out this new film we think you will like!")
+    };
+};
+
+recommendMovie();
