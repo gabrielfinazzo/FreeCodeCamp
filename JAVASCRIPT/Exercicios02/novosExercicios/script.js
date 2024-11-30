@@ -198,7 +198,7 @@ function showSolution() {
 
 showSolution() */
 
-let likesDocumentaries = true;
+/* let likesDocumentaries = true;
 let likesStartups = true;
 
 function recommendMovie() {
@@ -207,4 +207,4 @@ function recommendMovie() {
     };
 };
 
-recommendMovie();
+recommendMovie(); */

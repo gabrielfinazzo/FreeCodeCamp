@@ -17,12 +17,13 @@ let cardsEl = document.getElementById("cards-el");
 //Nome/Dinheiro -> Pontuação
 
 let player = {
-    name: "Per",
-    chips: 145
+    name: "Gabriel",
+    chips: 200,
 };
 
-let playerEl = document.getElementById("player-el");
-playerEl.textContent = player.name + ": $" + player.chips;
+
+let playerel = document.getElementById("player-el");
+playerel.textContent = player.name + ": $" + player.chips;
 
 // Create a function, getRandomCard(), that always returns the number 5
 function getRandomCard() {
