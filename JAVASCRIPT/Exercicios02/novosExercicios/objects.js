@@ -76,3 +76,86 @@ let discount; */
 };
 
 console.log(discount); */
+
+// EX: 04
+
+//let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
+
+/* Use a for loop to log the following to the console:
+
+The 5 largest countries in the world
+- China
+- India
+- United States
+- Indonesia
+- Pakistan
+*/
+/* console.log("The 5 largest countries in the world by population: ")
+for (let i = 0; i < largeCountries.length; i++) {
+    console.log("- " + largeCountries[i]);
+}; */
+
+
+// EX: 05
+
+//let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
+
+// You need to help me fixup the largeCountries array so that
+// China and Pakistan are added back into their respective places
+// Use push() & pop() and their counterparts unshift() & shift()
+// Google how to use unshift() and shift().
+/* largeCountries.pop();
+largeCountries.push("Pakistan")
+largeCountries.shift();
+largeCountries.unshift("China");
+console.log(largeCountries);
+for (let i = 0; i < largeCountries.length; i++) {
+    console.log("- " + largeCountries[i]);
+}; */
+
+// EX: 06
+
+/* let dayOfMonth = 13;
+let weekday = "Friday";
+
+// If it is Friday the 13th, log out this spooky face: 😱
+// Use the logical "AND operator" -> &&
+
+if (dayOfMonth === 13 && weekday === "Friday") {
+    console.log("😱");
+}; */
+
+// EX: 07
+
+/* let hands = ["rock", "papper", "scissor"];
+
+// Create a function that returns a random item from the array
+
+function randomItem() {
+    let random = Math.floor(Math.random() * 3);
+    return hands[random];
+};
+
+console.log(randomItem()); */
+
+// EX: 08
+
+let fruit = ["🍎", "🍊","🍎","🍎", "🍊"];
+let appleShelf = document.getElementById("apple-shelf");
+let orangeShelf = document.getElementById("orange-shelf");
+
+// Create a function that puts the apples onto the appleShelf
+// and the oranges onto the orangeShelf. Use a for loop,
+// a conditional statement, and the textContent property
+
+function putOnShelf() {
+    for (let a = 0;a < fruit.length; a++) {
+        if (fruit[a] === "🍎") {
+            appleShelf.textContent += "🍎 ";
+        } else {
+            orangeShelf.textContent += "🍊 ";
+        };
+    };
+};
+
+putOnShelf();
