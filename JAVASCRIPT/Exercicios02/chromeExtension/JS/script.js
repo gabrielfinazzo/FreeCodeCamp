@@ -9,6 +9,13 @@ const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 
+// Local Storage
+/* localStorage.setItem("myLeads", "www.examplelead.com"); */
+/* console.log(localStorage.getItem("myLeads")); */
+//localStorage.clear() */
+
+
+
 inputBtn.addEventListener("click", function() {
     // Push the value from the inputEl into the myLeads array
     // instead of the hard-coded "www.awesomeleads.com" value
